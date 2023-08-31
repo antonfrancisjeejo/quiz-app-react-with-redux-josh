@@ -1,0 +1,59 @@
+.container {
+  background-color: white;
+  padding: 35px 42px;
+  height: 98vh;
+  overflow-y: scroll;
+}
+
+.questionDisplay > h2 {
+  font-size: 24px;
+  color: #383838;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.typeOne {
+  padding: 40px 24px;
+}
+
+.buttonContainer {
+  text-align: right;
+  margin-top: 16px;
+  margin-right: 24px;
+}
+
+.buttonContainer button {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background: var(--primary-color);
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .container {
+    height: auto;
+  }
+  .buttonContainer button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttonContainer {
+    margin-right: 0;
+    margin-top: 24px;
+  }
+  .typeOne {
+    padding: 0;
+    margin-top: 25px;
+  }
+  .questionDisplay > h2 {
+    font-size: 20px;
+  }
+}

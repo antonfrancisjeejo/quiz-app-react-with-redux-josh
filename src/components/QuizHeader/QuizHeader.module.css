@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.testHeader {
+  display: flex;
+  align-items: center;
+  margin: 0 42px;
+  height: 72px;
+  justify-content: space-between;
+}
+
+.timer {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.timer span {
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+@media (max-width: 1320px) {
+  .testHeader {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .testHeader {
+    height: 65px;
+  }
+}
+
+@media (max-width: 500px) {
+  .testHeader {
+    max-width: 95%;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .testHeader h1 {
+    font-size: 24px;
+  }
+}

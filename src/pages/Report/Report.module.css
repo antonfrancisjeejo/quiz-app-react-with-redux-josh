@@ -1,0 +1,108 @@
+.report {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  box-shadow: 1px 10px 86px -1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 10px 86px -1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 10px 86px -1px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 900px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.report__correctAnswer {
+  color: rgb(21, 202, 21);
+}
+
+.report__wrongAnswer {
+  color: rgb(227, 0, 0);
+}
+
+.report__score {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  padding: 10px 0;
+}
+
+.report__tableContainer {
+  overflow-y: auto;
+  height: 500px;
+}
+
+.report__table thead tr {
+  background-color: var(--primary-color);
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.report__table th {
+  padding: 10px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.report__table td {
+  padding: 10px;
+}
+
+.report__table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.573);
+}
+
+.report__table tbody tr:nth-child(even) {
+  background-color: #a174ef27;
+}
+
+.report__buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.report__try {
+  border: 2px solid var(--primary-color);
+  background-color: rgba(237, 237, 237, 0.255);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.report__new {
+  border: none;
+  background-color: var(--primary-color);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-top: 10px;
+  }
+  .report__table th {
+    font-size: 14px;
+  }
+  .report__table td {
+    font-size: 14px;
+  }
+  .report__score {
+    font-size: 24px;
+    padding: 16px 0;
+  }
+}

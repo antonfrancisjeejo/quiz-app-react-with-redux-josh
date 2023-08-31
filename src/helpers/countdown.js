@@ -1,3 +1,4 @@
+//generates timer from given seconds value
 function timer(duration) {
   let seconds = duration % 60;
   let secondsInMinutes = (duration - seconds) / 60;

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz {
+  display: flex;
+  align-items: stretch;
+  /* min-height: 92vh; */
+}
+
+.quiz__left {
+  flex: 0.75;
+}
+
+.quiz__right {
+  flex: 0.25;
+}
+
+@media screen and (max-width: 800px) {
+  .quiz {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+}

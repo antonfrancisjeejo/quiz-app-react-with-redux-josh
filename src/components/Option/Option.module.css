@@ -1,0 +1,41 @@
+.optionContainer {
+  background: #ffffff;
+  border: 1px solid #cfd0d3;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.selectedOption {
+  border: 1px solid var(--primary-color);
+}
+
+.optionContainer pre {
+  padding-left: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #70737a;
+  white-space: pre-wrap;
+  padding-top: 1px;
+  font-family: "Poppins", sans-serif;
+}
+
+.selectedOption pre {
+  color: #111522;
+}
+
+.optionContainer:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.option {
+  margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+  .optionContainer pre {
+    font-size: 16px;
+  }
+}
